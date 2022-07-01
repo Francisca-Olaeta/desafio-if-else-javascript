@@ -1,0 +1,27 @@
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.stickers-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sticker {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    
+    &__img {
+        width: 10rem;
+        padding: 1rem 0;
+    }
+}

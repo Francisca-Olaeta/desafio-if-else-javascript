@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Desafío condiciones</title>
+    <style>
+        .borde-rojo {
+            border: solid 5px red;
+        }
+    </style>
+</head>
+<body>
+    <!--Parte 1-->
+    <div class="main-container">
+        <div class="section-1">
+            <h1>Desafío condiciones</h1>
+            <h2>Parte 1</h2>
+            <img id="border" src="assets/img/img-1.jpg" alt="perro-pc" class="img-border" onclick="cambiarBorde()">
+        </div>
+        
+        <!--Parte 2-->
+        <div class="section-2">
+            <h2>Parte 2</h2>
+            
+            <div class="stickers-container">
+                <div class="sticker">
+                    <img class="sticker__img" src="assets/img/img-2.png" alt="perro-1">
+                    <input class="sticker__input" id="sticker-1" type="number" min="0" placeholder="cantidad">
+                </div>
+    
+                <div class="sticker">
+                    <img class="sticker__img" src="assets/img/img-3.png" alt="perro-2">
+                    <input class="sticker__input" id="sticker-2" type="number" min="0" placeholder="cantidad">
+                </div>
+            
+                <div class="sticker">
+                    <img class="sticker__img" src="assets/img/img-4.png" alt="perro-3">
+                    <input class="sticker__input" id="sticker-3" type="number" min="0" placeholder="cantidad">
+                </div>
+            </div>
+        
+            <button class="btn" onclick="verificar()">Verificar</button>
+            <p id="text"></p>
+            
+        </div>
+    
+        <!--Parte 3-->
+        <div class="section-3">
+            <h2>Parte 3</h2>
+            <h3>Ingresa el password</h3>
+            <div class="selectors">
+                <select name="number-1" id="number1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+            
+                <select name="number-2" id="number2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+            
+                <select name="number-3" id="number3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                  </select>
+            </div>
+        
+            <input id="form" class="btn" type="submit" value="Ingresar" onclick="ingresarTotal()">
+            <p id="password"></p>
+        </div>
+    </div>
+
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
